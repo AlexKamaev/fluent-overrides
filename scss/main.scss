@@ -1,0 +1,50 @@
+$primary: #0f6cbd;
+$secondary: #ebebeb;
+$success: #128a13;
+$info: #6259e6;
+$warning: #bc4b09;
+$danger: #d31222;
+$light: #f1f1f1;
+$dark: #4e4e4e;
+
+$body-bg-dark: #282828;
+$border-color: black !default;
+$border-color-translucent: black !default;
+
+$nav-tabs-border-width: 0;
+$nav-tabs-border-radius: 0;
+$nav-link-color: var(--DS-color-content-neutral-default-rest);
+$nav-link-hover-color: var(--DS-color-content-neutral-default-hovered);
+$nav-tabs-link-active-color: var(--DS-color-content-primary-default-rest);
+
+$font-family-base: var(--DS-sans-serif);
+
+.card-header>.nav-tabs .nav-item {
+    position: relative;
+}
+
+.card-header>.nav-tabs .nav-item .nav-link::after {
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0;
+    height: var(--DS-sizing-xs-nudge);
+    border-radius: var(--DS-border-radius-small);
+}
+
+.card-header>.nav-tabs .nav-item:hover .nav-link::after {
+    background-color: var(--DS-color-content-neutral-subdued-disabled);
+}
+
+.card-header>.nav-tabs .nav-item .nav-link.active::after {
+    background-color: var(--DS-color-content-primary-default-rest);
+}
+
+$card-border-color: var(--DS-color-border-neutral-default-rest);
+$card-border-radius: var(--DS-border-radius-4x-large);
+$card-cap-bg: var(--DS-color-surface-neutral-default-rest);
+$card-bg: var(--DS-color-surface-neutral-default-rest);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
